@@ -4,47 +4,51 @@ import { Link } from "react-router-dom";
 import styles from "./Header.module.css";
 import { useState } from "react";
 
+import { useLocation } from "react-router-dom";
+
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => setIsOpen(!isOpen);
   return (
     <>
-      <nav className={styles.nav}>
-        <button onClick={toggleMenu}>{isOpen ? <HiOutlineX /> : <HiOutlineMenu />}</button>
-        <ul className={`${styles.navbarList} ${isOpen ? styles.active : ""}`}>
-          <li>
-            <Link to="/" className={styles.navLink} onClick={() => setIsOpen(false)}>
-              Home
-            </Link>
-          </li>
-          <li>
-            <Link to="/menu" className={styles.navLink} onClick={() => setIsOpen(false)}>
-              Menu
-            </Link>
-          </li>
-          <li>
-            <Link to="/locations" className={styles.navLink} onClick={() => setIsOpen(false)}>
-              Locations
-            </Link>
-          </li>
-          <li>
-            <Link to="/about" className={styles.navLink} onClick={() => setIsOpen(false)}>
-              About us
-            </Link>
-          </li>
-        </ul>
+      <nav>
+        <button onClick={toggleMenu} className={`${styles.menuIcon} ${isOpen ? styles.btnActive : ""}`}>
+          {isOpen ? <HiOutlineX /> : <HiOutlineMenu />}
+        </button>
+
+        <div className={`${styles.navigationMenuList} ${isOpen ? styles.active : ""}`}>
+          <ul>
+            <li>
+              <Link to="/" onClick={toggleMenu}>Home</Link>
+            </li>
+            <li>
+              <Link to="/menu" onClick={toggleMenu}>Menu</Link>
+            </li>
+            <li>
+              <Link to="/locations" onClick={toggleMenu}>Locations</Link>
+            </li>
+            <li>
+              <Link to="/about" onClick={toggleMenu}>About</Link>
+            </li>
+          </ul>
+        </div>
       </nav>
     </>
   );
 };
 
 const Header = () => {
+  const location = useLocation();
+  const isHome = location.pathname === "/";
+
+  const headerClass = `${styles.header} ${!isHome ? styles.headerClasses: ""}`
+  
   return (
     <>
-      <header className={styles.header}>
+      <header className={headerClass}>
         <div>
-          <h1>Coffe Shop</h1>
+          <Link to="/" className={styles.logoText}>Roast</Link>
         </div>
 
         <NavBar />
