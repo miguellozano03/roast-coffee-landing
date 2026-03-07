@@ -1,5 +1,5 @@
 import App from "../App";
-import { NotFound } from "../pages/404_Not_Found/not_found";
+import { Home, Menu, Locations, About, NotFound } from "../pages";
 import { createBrowserRouter } from "react-router-dom";
 
 const router = createBrowserRouter([
@@ -7,6 +7,24 @@ const router = createBrowserRouter([
     path: "/",
     Component: App,
     children: [
+      {
+        index: true,
+        Component: Home,
+      },
+      {
+        path: "/menu",
+        Component: Menu,
+      },
+      {
+        path: "/locations",
+        Component: Locations,
+      },
+
+      {
+        path: "/about",
+        Component: About,
+      },
+
       {
         path: "*",
         Component: NotFound,
