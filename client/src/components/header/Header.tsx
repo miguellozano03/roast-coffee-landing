@@ -2,7 +2,7 @@ import { HiOutlineMenu } from "react-icons/hi";
 import { HiOutlineX } from "react-icons/hi";
 import { Link } from "react-router-dom";
 import styles from "./Header.module.css";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 import { useLocation } from "react-router-dom";
 
@@ -39,10 +39,23 @@ const NavBar = () => {
 };
 
 const Header = () => {
+  const [scrolled, setScrolled] = useState(false);
   const location = useLocation();
   const isHome = location.pathname === "/";
 
-  const headerClass = `${styles.header} ${!isHome ? styles.headerClasses: ""}`
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 50);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+
+  const isHeaderActive = !isHome || (isHome && scrolled);
+
+  const headerClass = `${styles.header} ${isHeaderActive ? styles.headerClasses: ""}`
   
   return (
     <>

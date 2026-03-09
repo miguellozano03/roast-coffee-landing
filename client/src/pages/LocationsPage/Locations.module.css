@@ -1,0 +1,146 @@
+.container {
+  max-width: var(--container-max, 1200px);
+  margin: 0 auto;
+  padding: 120px 2rem 80px;
+  background-color: var(--bg-main);
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.title {
+  font-size: clamp(32px, 6vw, 48px);
+  font-family: var(--font-title);
+  color: var(--text-main);
+  font-weight: 800;
+}
+
+.subtitle {
+  color: var(--text-muted);
+  font-weight: 500;
+  font-size: 18px;
+  font-style: italic; /* Toque sofisticado */
+}
+
+/* SECCIÓN PRINCIPAL */
+.mainStore {
+  display: flex;
+  background-color: var(--bg-card, #ffffff); /* Usamos el blanco para que resalte del smoke */
+  border-radius: var(--radius-pro);
+  overflow: hidden;
+  margin-bottom: 4rem;
+  box-shadow: var(--shadow-subtle);
+  border: 1px solid var(--borders);
+}
+
+.mainInfo {
+  flex: 1;
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.tag {
+  color: var(--color-dusty-taupe);
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 0.8rem;
+  letter-spacing: 2px;
+  margin-bottom: 1rem;
+}
+
+.mainInfo h2 {
+  font-size: 2.2rem;
+  margin-bottom: 1.5rem;
+  color: var(--text-main);
+  font-family: var(--font-title);
+}
+
+.address,
+.hours {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: var(--text-body);
+}
+
+.desc {
+  color: var(--text-muted);
+  line-height: 1.6;
+  margin: 1.5rem 0;
+}
+
+/* BOTÓN ADAPTADO A TU NUEVO BORDEAUX */
+.mapBtn {
+  width: fit-content;
+  padding: 0.8rem 2rem;
+  background-color: var(--btn-bg);
+  color: var(--text-light);
+  border: none;
+  border-radius: var(--radius-pro);
+  cursor: pointer;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: var(--transition-smooth);
+}
+
+.mapBtn:hover {
+  background-color: var(--btn-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(125, 29, 46, 0.3);
+}
+
+.mainImage {
+  flex: 1.2;
+  /* El filtro sepia/oscuro ayuda a que combine con el tema café */
+  filter: grayscale(20%) sepia(10%);
+  background-image: url("https://images.unsplash.com/photo-1554118811-1e0d58224f24?q=80&w=1000");
+  background-size: cover;
+  background-position: center;
+}
+
+/* GRID DE SUCURSALES */
+.branchesGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2rem;
+}
+
+.branchCard {
+  padding: 2.5rem;
+  background-color: var(--bg-card, #ffffff);
+  border: 1px solid var(--borders);
+  border-radius: var(--radius-pro);
+  transition: var(--transition-smooth);
+}
+
+.branchCard:hover {
+  border-color: var(--color-dusty-taupe);
+  box-shadow: var(--shadow-subtle);
+  transform: translateY(-5px);
+}
+
+.branchCard h3 {
+  margin-bottom: 1rem;
+  color: var(--text-main);
+  font-family: var(--font-title);
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .mainStore {
+    flex-direction: column-reverse;
+  }
+  .mainImage {
+    height: 300px;
+  }
+  .mainInfo {
+    padding: 2rem;
+  }
+  .branchesGrid {
+    grid-template-columns: 1fr;
+  }
+}

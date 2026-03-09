@@ -1,0 +1,37 @@
+:root {
+  /* --- Palette --- */
+  --color-black: #0a0908;
+  --color-night-bordeaux: #49111c;
+  --color-white-smoke: #f2f4f3;
+  --color-dusty-taupe: #a9927d;
+  --color-stone-brown: #5e503f;
+
+  /* --- Bordeaux Accents --- */
+  --bordeaux-vivid: #631a26;
+  --bordeaux-bright: #7d1d2e;
+  --bordeaux-roast: #912f33;
+
+  /* --- Surfaces (Aquí controlamos la claridad) --- */
+  --bg-main: var(--color-white-smoke);  /* Fondo dominante */
+  --bg-card: #ffffff;                    /* Tarjetas blancas puras para resaltar */
+  --bg-dark: var(--color-black);         /* Solo para Nav o Footer */
+  --bg-dark-transparent: rgba(10, 9, 8, 0.89);
+
+  /* --- Typography (Suavizado) --- */
+  --text-main: #1a1817;      /* Un "casi negro" para títulos, menos agresivo */
+  --text-body: #4a443f;      /* Gris oscuro cálido para párrafos (lectura suave) */
+  --text-muted: #76695a;     /* Para textos secundarios */
+  --text-light: var(--color-white-smoke);
+
+  /* --- Functional --- */
+  --btn-bg: var(--bordeaux-bright);
+  --btn-hover: var(--bordeaux-roast);
+  --accent: var(--color-night-bordeaux);
+  --details: var(--color-dusty-taupe);
+  --borders: rgba(94, 80, 63, 0.15); /* Stone brown muy suave para líneas */
+
+  /* --- Utils --- */
+  --radius-pro: 4px;
+  --shadow-subtle: 0 10px 30px rgba(10, 9, 8, 0.05);
+  --transition-smooth: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+}

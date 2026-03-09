@@ -1,0 +1,54 @@
+.container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem;
+  background-color: var(--bg-creme); /* Usando tu súper tema */
+}
+
+.content {
+  max-width: 500px;
+}
+
+.errorNumber {
+  font-size: clamp(80px, 15vw, 150px);
+  font-weight: 900;
+  color: var(--primary-color);
+  line-height: 1;
+  margin: 0;
+  opacity: 0.2;
+}
+
+.title {
+  font-size: 2rem;
+  color: var(--text-main);
+  margin-top: -30px;
+  margin-bottom: 1.5rem;
+  font-family: var(--font-title);
+}
+
+.message {
+  color: var(--text-muted);
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 2.5rem;
+}
+
+.homeBtn {
+  display: inline-block;
+  padding: 1rem 2.5rem;
+  background-color: var(--text-main);
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: var(--border-radius-sm);
+  transition: all 0.3s ease;
+}
+
+.homeBtn:hover {
+  background-color: var(--primary-color);
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-hover);
+}
