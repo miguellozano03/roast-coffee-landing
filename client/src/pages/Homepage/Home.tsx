@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
+import { useMenu } from "@hooks/useMenu";
 import { Card } from "@components/card/Card";
-import { favorites } from "./favouritesProducts";
+// import { favorites } from "./favouritesProducts";
 import heroImage from "@assets/images/hero_background.webp";
 import styles from "./Home.module.css";
 
@@ -13,6 +14,8 @@ const heroTexts = [
 ];
 
 export const Home = () => {
+  const {menu} = useMenu();
+  const favorites = menu.slice(0,3);
   return (
     <>
       <section
@@ -56,7 +59,7 @@ export const Home = () => {
           {favorites.map((product) => (
             <Card
               imgUrl={product.imgUrl}
-              imgAlt={product.imgAlt}
+              imgAlt={product.title}
               title={product.title}
               content={product.content}
               price={product.price}

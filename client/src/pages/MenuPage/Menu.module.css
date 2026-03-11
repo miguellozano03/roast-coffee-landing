@@ -36,3 +36,16 @@
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 4rem;
 }
+
+.statusMessage {
+  text-align: center;
+  font-size: 1.3rem;
+  color: #333;
+  margin-top: 100px;
+  font-family: "Inter", sans-serif;
+}
+
+.statusMessage.error {
+  color: #d9534f; /* rojo para errores */
+  font-weight: bold;
+}
