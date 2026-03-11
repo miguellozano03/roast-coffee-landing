@@ -1,4 +1,3 @@
-
 type MenuCategory = 'coffee' | 'cold-drinks' | 'tea' | 'bakery';
 
 export interface MenuItemDTO {
