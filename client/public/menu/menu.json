@@ -1,0 +1,154 @@
+[
+  {
+    "id": 1,
+    "title": "Vanilla Latte",
+    "category": "coffee",
+    "content": "Espresso with steamed milk & vanilla.",
+    "price": 4.5,
+    "imgUrl": "/menu/images/vainilla_latte.webp"
+  },
+  {
+    "id": 2,
+    "title": "Caramel Macchiato",
+    "category": "coffee",
+    "content": "Espresso with caramel drizzle & milk.",
+    "price": 5.0,
+    "imgUrl": "/menu/images/caramel_macchiato.webp"
+  },
+  {
+    "id": 3,
+    "title": "Iced Americano",
+    "category": "cold-drinks",
+    "content": "Espresso with cold water & ice.",
+    "price": 3.5,
+    "imgUrl": "/menu/images/iced_americano.webp"
+  },
+  {
+    "id": 4,
+    "title": "Cold Brew Coffee",
+    "category": "cold-drinks",
+    "content": "Slow-brewed cold coffee, smooth & rich.",
+    "price": 4.0,
+    "imgUrl": "/menu/images/cold_brew_coffe.webp"
+  },
+  {
+    "id": 5,
+    "title": "Mocha Frappuccino",
+    "category": "cold-drinks",
+    "content": "Blended chocolate coffee drink.",
+    "price": 5.25,
+    "imgUrl": "/menu/images/mocha_frappuccino.webp"
+  },
+  {
+    "id": 6,
+    "title": "Matcha Latte",
+    "category": "tea",
+    "content": "Green tea matcha with steamed milk.",
+    "price": 4.8,
+    "imgUrl": "/menu/images/matcha_latte.webp"
+  },
+  {
+    "id": 7,
+    "title": "Chai Tea Latte",
+    "category": "tea",
+    "content": "Spiced chai blended with milk.",
+    "price": 4.2,
+    "imgUrl": "/menu/images/chai_te_latte.webp"
+  },
+  {
+    "id": 8,
+    "title": "Espresso Shot",
+    "category": "coffee",
+    "content": "Rich, concentrated espresso shot.",
+    "price": 2.5,
+    "imgUrl": "/menu/images/expresso_shot.webp"
+  },
+  {
+    "id": 9,
+    "title": "Flat White",
+    "category": "coffee",
+    "content": "Espresso with a thin layer of microfoam.",
+    "price": 4.4,
+    "imgUrl": "/menu/images/flat_white.webp"
+  },
+  {
+    "id": 10,
+    "title": "Cappuccino",
+    "category": "coffee",
+    "content": "Espresso with equal parts foam & milk.",
+    "price": 4.6,
+    "imgUrl": "/menu/images/cappuccino.webp"
+  },
+  {
+    "id": 11,
+    "title": "Butter Croissant",
+    "category": "bakery",
+    "content": "Classic flaky French pastry.",
+    "price": 2.8,
+    "imgUrl": "/menu/images/butter_croissant.webp"
+  },
+  {
+    "id": 12,
+    "title": "Chocolate Muffin",
+    "category": "bakery",
+    "content": "Moist chocolate muffin baked fresh.",
+    "price": 3.1,
+    "imgUrl": "/menu/images/chocolate-muffin.webp"
+  },
+  {
+    "id": 13,
+    "title": "Blueberry Scones",
+    "category": "bakery",
+    "content": "Tender scone with fresh blueberries.",
+    "price": 3.3,
+    "imgUrl": "/menu/images/blueberry_scones.webp"
+  },
+  {
+    "id": 14,
+    "title": "Banana Bread Slice",
+    "category": "bakery",
+    "content": "Moist banana bread with walnuts.",
+    "price": 3.0,
+    "imgUrl": "/menu/images/banana_bread_slice.webp"
+  },
+  {
+    "id": 15,
+    "title": "Cinnamon Rolls",
+    "category": "bakery",
+    "content": "Sweet roll with cinnamon & icing.",
+    "price": 3.5,
+    "imgUrl": "/menu/images/cinnamon_rolls.webp"
+  },
+  {
+    "id": 16,
+    "title": "Cheesecake Slice",
+    "category": "bakery",
+    "content": "Creamy classic cheesecake.",
+    "price": 4.9,
+    "imgUrl": "/menu/images/cheesecake_slice.webp"
+  },
+  {
+    "id": 17,
+    "title": "Chocolate Brownies",
+    "category": "bakery",
+    "content": "Fudgy chocolate brownie square.",
+    "price": 3.8,
+    "imgUrl": "/menu/images/chocolate_brownies.webp"
+  },
+  {
+    "id": 18,
+    "title": "Red Velvet Cupcakes",
+    "category": "bakery",
+    "content": "Red velvet cake with cream cheese frosting.",
+    "price": 3.9,
+    "imgUrl": "/menu/images/red_velvet_cupcakes.webp"
+  },
+  {
+    "id": 19,
+    "title": "Mint Mocha",
+    "category": "cold-drinks",
+    "content": "Chocolate coffee with mint.",
+    "price": 5.1,
+    "imgUrl": "/menu/images/mint_mocha.webp"
+  }
+]
