@@ -150,5 +150,13 @@
     "content": "Chocolate coffee with mint.",
     "price": 5.1,
     "imgUrl": "/menu/images/mint_mocha.webp"
+  },
+  {
+    "id": 20,
+    "title": "Avocado Toast",
+    "category": "bakery",
+    "content": "Fresh sourdough bread topped with mashed avocado, chili flakes, and a touch of olive oil.",
+    "price": 4.5,
+    "imgUrl": "/menu/images/avocado_toast.webp"
   }
 ]
