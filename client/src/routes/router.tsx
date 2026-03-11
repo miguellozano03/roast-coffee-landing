@@ -1,6 +1,8 @@
-import App from "../App";
-import { Home, Menu, Locations, About, NotFound } from "../pages";
 import { createBrowserRouter } from "react-router-dom";
+// @ts-ignore
+import { Home, Menu, Locations, About, NotFound } from "@pages";
+import App from "../App";
+
 
 const router = createBrowserRouter([
   {

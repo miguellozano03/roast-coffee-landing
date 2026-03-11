@@ -1,8 +1,8 @@
-import styles from "./Home.module.css";
-import heroImage from "../../assets/images/background-hero_11zon.webp";
-import { Card } from "../../components/card/Card";
 import { Link } from "react-router-dom";
+import { Card } from "@components/card/Card";
 import { favorites } from "./favouritesProducts";
+import heroImage from "@assets/images/hero_background.webp";
+import styles from "./Home.module.css";
 
 const heroTexts = [
   {

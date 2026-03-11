@@ -1,6 +1,6 @@
-import styles from "./footer.module.css";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
+import styles from "./footer.module.css";
 
 const Footer = () => {
   return (

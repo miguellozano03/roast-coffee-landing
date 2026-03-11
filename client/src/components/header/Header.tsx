@@ -1,10 +1,9 @@
+import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 import { HiOutlineMenu } from "react-icons/hi";
 import { HiOutlineX } from "react-icons/hi";
-import { Link } from "react-router-dom";
 import styles from "./Header.module.css";
-import { useState, useEffect } from "react";
-
-import { useLocation } from "react-router-dom";
 
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);

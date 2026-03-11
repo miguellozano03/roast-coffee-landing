@@ -1,8 +1,8 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
-import "./index.css";
-import "./assets/styles/colors.css";
 import { RouterProvider } from "react-router-dom";
+import "@assets/styles/colors.css";
+import "./index.css";
 
 import router from "./routes/router";
 

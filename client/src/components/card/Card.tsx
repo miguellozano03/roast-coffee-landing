@@ -1,13 +1,5 @@
+import {type CardProps } from "@interfaces/card";
 import styles from "./Card.module.css";
-
-interface CardProps {
-  imgUrl?: string;
-  imgAlt?: string;
-
-  title: string;
-  content: string;
-  price: number;
-}
 
 export const Card = ({imgUrl, imgAlt, title, content, price}: CardProps) => {
   return (

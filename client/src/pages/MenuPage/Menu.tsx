@@ -1,6 +1,6 @@
-import { Card } from "../../components/card/Card";
-import styles from "./Menu.module.css";
 import { useState, useEffect } from "react";
+import { Card } from "@components/card/Card";
+import styles from "./Menu.module.css";
 
 export const Menu = () => {
   const [menu, setMenu] = useState([]);
