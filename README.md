@@ -3,7 +3,7 @@
 Landing Page for Roast, a fictional coffee shop chain. Explore the homepage, view our locations, browse the menu and learn about us.
 
 ## Live Demo
-- Demo: https://roast-coffee-landing-orpin.vercel.app/
+- Demo: https://roast-coffee-landing-kappa.vercel.app/
 
 `The demo branch only shows mock data for portfolio purposes.`
 
