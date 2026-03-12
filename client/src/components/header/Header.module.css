@@ -23,7 +23,8 @@
   font-weight: bold;
 }
 
-.logoText, .menuIcon {
+.logoText,
+.menuIcon {
   color: var(--color-white-smoke);
   cursor: pointer;
   transition: ease 160ms;
@@ -43,17 +44,24 @@
   color: var(--text-main);
 }
 
-.logoText:hover, .menuIcon:hover {
+.logoText:hover,
+.menuIcon:hover {
   color: var(--details);
 }
 
 .headerClasses .logoText:hover,
 .headerClasses .menuIcon:hover {
   color: var(--details);
+  font-size: 32px;
 }
 
 .btnActive {
-  color: var(--color-white-smoke);
+  color: var(--color-white-smoke) !important;
+}
+
+.btnActive:hover {
+  color: var(--details) !important;
+  font-size: 33px;
 }
 
 .navigationMenuList {
@@ -91,4 +99,43 @@
 
 .navigationMenuList ul li a:hover {
   color: var(--details);
+}
+
+@media (min-width: 768px) {
+  .menuIcon {
+    display: none;
+  }
+
+  .navigationMenuList {
+    position: static;
+    left: auto;
+    width: auto;
+    height: auto;
+    display: flex;
+    background: none;
+    transition: none;
+  }
+
+  .navigationMenuList ul {
+    flex-direction: row;
+    font-size: 20px;
+    gap: 2rem;
+  }
+
+  .navigationMenuList ul li a {
+    color: var(--color-white-smoke);
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    transition: color 0.3s ease;
+  }
+
+  .headerClasses .navigationMenuList ul li a {
+    color: var(--text-main);
+  }
+
+  /* Hover para ambos estados */
+  .navigationMenuList ul li a:hover {
+    color: var(--details);
+  }
+
 }

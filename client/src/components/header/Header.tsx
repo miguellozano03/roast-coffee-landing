@@ -54,7 +54,7 @@ const Header = () => {
 
   const isHeaderActive = !isHome || (isHome && scrolled);
 
-  const headerClass = `${styles.header} ${isHeaderActive ? styles.headerClasses: ""}`
+  const headerClass = `${styles.header} ${isHeaderActive ? styles.headerClasses : ""}`
   
   return (
     <>
